@@ -1,467 +1,407 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Portfólio acadêmico de Abigaiu Porto, estudante de Sistemas para Internet com interesse em UX/UI Design e desenvolvimento front-end."
-    >
-
-    <meta name="author" content="Abigaiu Porto">
-
-    <title>Abigaiu Porto | Portfólio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academia MOVE-SR · Case study de UX/UI Design · Abigaiu Porto do Prado</title>
+<meta name="description" content="Case study de UX/UI Design do aplicativo mobile Academia MOVE-SR: pesquisa exploratória, personas, arquitetura, fluxos, wireframes, design system, interface e protótipo.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<a class="skip" href="#projeto">Ir para o conteúdo</a>
 
-    <header>
-        <div class="container nav">
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#topo">ABIGAIU PORTO</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Navegação principal">
+      <a href="#projeto">O projeto</a>
+      <a href="#processo">Processo</a>
+      <a href="#arquitetura">Arquitetura</a>
+      <a href="#wireframes">Wireframes</a>
+      <a href="#ui">UI</a>
+      <a href="#prototipo">Protótipo</a>
+      <a class="btn btn-lime btn-sm" href="https://www.figma.com/design/KLnjgT60yGeI8IdzOyXWbq/academia?node-id=1-3&t=Z8OjPzL8uDBJyc5q-1" target="_blank" rel="noopener">Figma →</a>
+    </nav>
+  </div>
+</header>
 
-            <a href="index.html" class="logo">
-                ABIGAIU<span>✦</span>
-            </a>
+<main id="topo">
 
-            <nav aria-label="Navegação principal">
-                <a href="#projetos">Projetos</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
+<!-- HERO -->
+<section class="hero dark-black">
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <p class="kicker">CASE STUDY · UX/UI DESIGN</p>
+      <h1>ACADEMIA<br>MOVE-SR</h1>
+      <p class="hero-sub">Redesenhando a experiência digital de uma academia</p>
+      <p class="lead">Uma proposta de aplicativo mobile para organizar treinos, aulas, evolução, pagamentos e gestão em uma única experiência.</p>
+      <ul class="tags" aria-label="Escopo">
+        <li>UX/UI</li><li>Arquitetura da Informação</li><li>Design System</li><li>Figma</li><li>Prototipação</li>
+      </ul>
+      <p class="byline">Abigaiu Porto do Prado<br><span>UX/UI Design · Product Design</span></p>
+    </div>
+    <div class="hero-shots" aria-label="Telas do aplicativo">
+      <figure class="shot phone s1" data-file="hero-home.png"><img src="assets/aluno-home.png" alt="Tela inicial do aluno no aplicativo Academia MOVE-SR" loading="eager"></figure>
+      <figure class="shot phone s2" data-file="hero-treino.png"><img src="assets/aluno-treino.png" alt="Tela de treino do aluno no aplicativo Academia MOVE-SR" loading="eager"></figure>
+      <figure class="shot phone s3" data-file="hero-evolucao.png"><img src="assets/aluno-evolucao.png" alt="Tela de evolução do aluno no aplicativo Academia MOVE-SR" loading="eager"></figure>
+    </div>
+  </div>
+</section>
 
-            <span class="header-contact">
-                São Paulo · Brasil
-            </span>
+<!-- 01 -->
+<section class="sec" id="projeto">
+  <div class="wrap">
+    <header class="sh"><p class="no">01 / O projeto</p><h2>Um app, três perfis, uma só navegação.</h2></header>
+    <div class="split">
+      <p class="big">A Academia MOVE-SR é uma proposta acadêmica de aplicativo mobile desenvolvida para organizar a experiência digital de uma academia e facilitar o acesso às principais informações por diferentes perfis de usuários.</p>
+      <dl class="facts">
+        <div><dt>Projeto</dt><dd>Academia MOVE-SR</dd></div>
+        <div><dt>Disciplina</dt><dd>Projeto de Navegação e Interação</dd></div>
+        <div><dt>Instituição</dt><dd>Fatec São Roque</dd></div>
+        <div><dt>Ferramenta</dt><dd>Figma</dd></div>
+        <div><dt>Plataforma</dt><dd>Mobile</dd></div>
+        <div><dt>Perfis</dt><dd>Aluno · Professor · Gestão</dd></div>
+        <div><dt>Escopo</dt><dd>UX/UI · IA · Fluxos · Wireframes · Protótipo</dd></div>
+      </dl>
+    </div>
+    <p class="note">Projeto acadêmico de UX/UI e prototipação. Não se trata de um aplicativo desenvolvido ou em funcionamento.</p>
+  </div>
+</section>
 
+<!-- 02 -->
+<section class="sec dark-ink" id="problema">
+  <div class="wrap">
+    <header class="sh"><p class="no">02 / O problema</p><h2>Informação espalhada, rotina interrompida.</h2></header>
+    <div class="problem">
+      <div>
+        <p class="body-l">Na rotina de uma academia, informações essenciais costumam ficar fragmentadas em canais e ferramentas diferentes. Cada perfil precisa de coisas distintas, e a soma dessas necessidades pode tornar a navegação confusa.</p>
+        <ul class="scatter" aria-label="Informações fragmentadas">
+          <li>treinos</li><li>aulas</li><li>evolução</li><li>avaliações</li><li>pagamentos</li><li>comunicados</li><li>informações administrativas</li>
+        </ul>
+      </div>
+      <blockquote class="question">
+        <p>Como organizar diferentes necessidades dentro de um único aplicativo sem tornar a navegação complexa?</p>
+        <cite>Pergunta de projeto</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="sec" id="processo">
+  <div class="wrap">
+    <header class="sh"><p class="no">03 / Processo</p><h2>Do levantamento ao protótipo.</h2></header>
+    <ol class="steps">
+      <li><span>01</span><h3>Pesquisa exploratória</h3><p>Levantamento de necessidades e situações de uso.</p></li>
+      <li><span>02</span><h3>Personas</h3><p>Três perfis fictícios para orientar decisões.</p></li>
+      <li><span>03</span><h3>Jornada</h3><p>Etapas de uso do aluno, do acesso ao plano.</p></li>
+      <li><span>04</span><h3>Requisitos</h3><p>Funcionais por perfil e não funcionais.</p></li>
+      <li><span>05</span><h3>Arquitetura</h3><p>Hierarquia de conteúdos por perfil de acesso.</p></li>
+      <li><span>06</span><h3>Fluxos</h3><p>Caminhos principais de aluno, professor e gestão.</p></li>
+      <li><span>07</span><h3>Wireframes</h3><p>Estrutura e componentes antes do visual.</p></li>
+      <li><span>08</span><h3>Design System</h3><p>Cores, tipografia e componentes reutilizáveis.</p></li>
+      <li><span>09</span><h3>UI</h3><p>Interface final para os três perfis.</p></li>
+      <li><span>10</span><h3>Protótipo</h3><p>Navegação interativa desenvolvida no Figma.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="sec sec-line" id="pesquisa">
+  <div class="wrap">
+    <header class="sh"><p class="no">04 / Pesquisa exploratória</p><h2>Hipóteses de projeto, não dados de usuários.</h2></header>
+    <div class="split">
+      <div>
+        <p class="tag-label">Pesquisa exploratória · perfis fictícios</p>
+        <p class="big">O projeto contou com a elaboração de um questionário exploratório para levantar necessidades e situações de uso relacionadas aos diferentes perfis da academia. O instrumento não foi aplicado a usuários reais e foi utilizado como apoio às hipóteses de projeto.</p>
+      </div>
+      <div class="profiles">
+        <article><h3>ALUNO</h3><p>Treinos · evolução · aulas · pagamentos</p></article>
+        <article><h3>PROFESSOR</h3><p>Alunos · treinos · avaliações · agenda</p></article>
+        <article><h3>GESTÃO</h3><p>Alunos · financeiro · professores · turmas</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section class="sec dark-ink" id="personas">
+  <div class="wrap">
+    <header class="sh"><p class="no">05 / Personas</p><h2>Três pessoas para orientar as decisões.</h2></header>
+    <div class="personas">
+      <article class="persona">
+        <div class="initial" aria-hidden="true">M</div>
+        <div><h3>Maria Alice</h3><p class="meta">35 anos · Analista Administrativa</p></div>
+        <p class="goal">"Manter uma rotina de treino mesmo com pouco tempo disponível."</p>
+        <ul class="chips"><li>horários</li><li>treino</li><li>ocupação</li><li>evolução</li></ul>
+      </article>
+      <article class="persona">
+        <div class="initial" aria-hidden="true">R</div>
+        <div><h3>Rafael Santos</h3><p class="meta">34 anos · Professor de Musculação</p></div>
+        <p class="goal">"Acompanhar alunos e atualizar treinos de forma prática."</p>
+        <ul class="chips"><li>alunos</li><li>treinos</li><li>avaliações</li><li>agenda</li></ul>
+      </article>
+      <article class="persona">
+        <div class="initial" aria-hidden="true">J</div>
+        <div><h3>Juliana Martins</h3><p class="meta">40 anos · Gestora</p></div>
+        <p class="goal">"Visualizar as principais informações da academia em um único lugar."</p>
+        <ul class="chips"><li>alunos</li><li>financeiro</li><li>professores</li><li>turmas</li></ul>
+      </article>
+    </div>
+    <p class="note on-dark">Personas fictícias desenvolvidas para fins acadêmicos.</p>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="sec dark-black" id="jornada">
+  <div class="wrap">
+    <header class="sh"><p class="no">06 / Jornada do usuário</p><h2>A jornada do aluno, do acesso ao plano.</h2></header>
+    <ol class="journey">
+      <li><b>ENTRAR</b><p>Acesso à conta.</p></li>
+      <li><b>CONSULTAR TREINO</b><p>Ver o treino do dia.</p></li>
+      <li><b>INICIAR TREINO</b><p>Acompanhar a execução.</p></li>
+      <li><b>ACOMPANHAR EVOLUÇÃO</b><p>Ver o histórico.</p></li>
+      <li><b>CONSULTAR AULAS</b><p>Ver horários e turmas.</p></li>
+      <li><b>GERENCIAR PLANO</b><p>Plano e pagamentos.</p></li>
+    </ol>
+    <p class="body-l narrow">Professor e gestão possuem jornadas próprias: o professor acompanha alunos, treinos, avaliações e agenda; a gestão acompanha alunos, professores, financeiro e turmas.</p>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="sec" id="requisitos">
+  <div class="wrap">
+    <header class="sh"><p class="no">07 / Requisitos</p><h2>O que cada perfil precisa resolver.</h2></header>
+    <div class="reqs">
+      <div><h3>ALUNO</h3><ul><li>Treinos</li><li>Evolução</li><li>Aulas</li><li>Plano</li><li>Pagamentos</li><li>Lotação</li><li>Comunicados</li></ul></div>
+      <div><h3>PROFESSOR</h3><ul><li>Alunos</li><li>Treinos</li><li>Avaliações</li><li>Frequência</li><li>Agenda</li></ul></div>
+      <div><h3>GESTÃO</h3><ul><li>Alunos</li><li>Professores</li><li>Financeiro</li><li>Turmas</li><li>Comunicados</li><li>Indicadores</li></ul></div>
+    </div>
+    <div class="nfr">
+      <h3>Requisitos não funcionais</h3>
+      <ul class="chips light"><li>usabilidade</li><li>acessibilidade</li><li>legibilidade</li><li>segurança</li><li>responsividade</li><li>consistência</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="sec dark-ink" id="arquitetura">
+  <div class="wrap">
+    <header class="sh"><p class="no">08 / Arquitetura da Informação</p><h2>Organizar antes de desenhar.</h2></header>
+    <p class="body-l narrow">A arquitetura foi estruturada considerando os diferentes perfis de acesso e a hierarquia entre conteúdos e funcionalidades.</p>
+    <figure class="wide-fig">
+      <div class="shot wide" data-file="arquitetura.png"><img src="assets/ARQUITETURA-DA-INFORMAÇÃO.png" alt="Diagrama de arquitetura da informação da Academia MOVE-SR, com os perfis aluno, professor e gestão" data-zoom></div>
+      <figcaption>Arquitetura da Informação · Academia MOVE-SR</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 09 -->
+<section class="sec" id="fluxos">
+  <div class="wrap">
+    <header class="sh"><p class="no">09 / User Flows</p><h2>Três caminhos principais.</h2></header>
+    <div class="flows">
+      <div class="flow"><h3>ALUNO</h3><ol><li>Login</li><li>Início</li><li>Treino</li><li>Evolução</li><li>Perfil</li></ol></div>
+      <div class="flow"><h3>PROFESSOR</h3><ol><li>Login</li><li>Início</li><li>Alunos</li><li>Treino</li><li>Avaliação</li><li>Agenda</li></ol></div>
+      <div class="flow"><h3>GESTÃO</h3><ol><li>Login</li><li>Início</li><li>Alunos</li><li>Financeiro</li><li>Professores</li><li>Turmas</li></ol></div>
+    </div>
+    <figure class="wide-fig light">
+      <div class="shot wide" data-file="fluxos.png"><img src="assets/FluxoUSUÁRIO.png" alt="Diagrama dos fluxos de navegação de aluno, professor e gestão" data-zoom></div>
+      <figcaption>User Flows · Academia MOVE-SR</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="sec sec-line" id="wireframes">
+  <div class="wrap">
+    <header class="sh"><p class="no">10 / Wireframes</p><h2>Estrutura antes da estética.</h2></header>
+    <p class="body-l narrow">Os wireframes foram desenvolvidos para estruturar a hierarquia das informações, os componentes e os caminhos de navegação antes da definição visual final.</p>
+    <div class="gal-block"><h3>TELAS COMPARTILHADAS</h3><div class="gallery" data-gallery="wf-shared"></div></div>
+    <div class="gal-block"><h3>ALUNO</h3><div class="gallery" data-gallery="wf-aluno"></div></div>
+    <div class="gal-block"><h3>PROFESSOR</h3><div class="gallery" data-gallery="wf-professor"></div></div>
+    <div class="gal-block"><h3>GESTÃO</h3><div class="gallery" data-gallery="wf-gestao"></div></div>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="sec dark-black" id="design-system">
+  <div class="wrap">
+    <header class="sh"><p class="no">11 / Design System</p><h2>Um conjunto de regras que se repete em todas as telas.</h2></header>
+
+    <div class="ds-row">
+      <h3 class="ds-t">Cores</h3>
+      <ul class="swatches">
+        <li><i class="sw-ink"></i><b>#332F2F</b></li>
+        <li><i class="sw-black"></i><b>#000000</b></li>
+        <li><i class="sw-lime"></i><b>#DCF230</b></li>
+        <li><i class="sw-white"></i><b>#FFFFFF</b></li>
+      </ul>
+    </div>
+
+    <div class="ds-row">
+      <h3 class="ds-t">Tipografia</h3>
+      <div class="type-spec">
+        <p class="ts-name">Space Grotesk</p>
+        <div><span>H1</span><p class="t-h1">Treino de hoje</p></div>
+        <div><span>H2</span><p class="t-h2">Sua evolução</p></div>
+        <div><span>Body</span><p class="t-body">Confira os horários das aulas e a lotação atual.</p></div>
+        <div><span>Label</span><p class="t-label">PRÓXIMA AULA</p></div>
+        <div><span>Button</span><p class="t-btn">Iniciar treino</p></div>
+      </div>
+    </div>
+
+    <div class="ds-row">
+      <h3 class="ds-t">Componentes</h3>
+      <div class="comps">
+        <div class="comp"><small>Botões</small><div class="row"><button class="c-btn primary" type="button">Iniciar treino</button><button class="c-btn ghost" type="button">Cancelar</button></div></div>
+        <div class="comp"><small>Card</small><div class="c-card"><b>Treino A · Peito e tríceps</b><span>6 exercícios · 50 min</span></div></div>
+        <div class="comp"><small>Badges e status</small><div class="row"><span class="badge lime">Concluído</span><span class="badge line">Pendente</span><span class="badge dot">Em andamento</span></div></div>
+        <div class="comp"><small>Input</small><label class="c-field">Email<input type="email" placeholder="nome@email.com"></label></div>
+        <div class="comp"><small>Busca</small><label class="c-search"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2"/></svg><input type="search" placeholder="Buscar aluno" aria-label="Buscar aluno"></label></div>
+        <div class="comp"><small>Ícones</small>
+          <div class="row icons" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M2 9v6M5 6v12M19 6v12M22 9v6M5 12h14"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M3 20h18M6 20V10M12 20V4M18 20v-7"/></svg>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          </div>
         </div>
-    </header>
-
-    <main>
-
-        <!-- HERO -->
-
-        <section class="hero">
-
-            <div class="container">
-
-                <div class="hero-top">
-                    <span class="eyebrow">
-                        ESTUDANTE · UX/UI
-                    </span>
-
-                    <span class="hero-location">
-                        PORTFÓLIO 2026
-                    </span>
-                </div>
-
-                <h1>
-                    Aprendendo a criar
-                    <em>experiências com propósito.</em>
-                </h1>
-
-                <div class="hero-bottom">
-
-                    <p>
-                        Sou estudante de Sistemas para Internet e venho
-                        desenvolvendo meus conhecimentos em UX/UI Design,
-                        interfaces e desenvolvimento front-end por meio de
-                        projetos acadêmicos e estudos pessoais.
-                    </p>
-
-                    <a href="#projetos" class="button">
-                        Ver projetos
-                        <span>↗</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- INTRODUÇÃO -->
-
-        <section class="intro">
-
-            <div class="container intro-grid">
-
-                <span class="section-number">
-                    01 / SOBRE
-                </span>
-
-                <div>
-
-                    <h2>
-                        Olá, sou
-                        <em>Abigaiu.</em>
-                    </h2>
-
-                    <p>
-                        Atualmente estou construindo minha trajetória na área
-                        de tecnologia. Tenho interesse especial por UX/UI
-                        Design e gosto de transformar o que aprendo em
-                        projetos práticos.
-                    </p>
-
-                    <a href="#sobre" class="text-link">
-                        Conheça minha trajetória →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJETOS -->
-
-        <section id="projetos" class="projects">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="eyebrow">
-                            PROJETOS ACADÊMICOS
-                        </span>
-
-                        <h2>
-                            Projetos que
-                            <em>fazem parte do meu aprendizado.</em>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Estes projetos foram desenvolvidos durante minha
-                        formação acadêmica e representam algumas das áreas
-                        que venho estudando e explorando.
-                    </p>
-
-                </div>
-
-
-                <div class="projects-grid">
-
-                    <!-- NFSCARS -->
-
-                    <article class="project">
-
-                        <a
-                            href="nfscar.html"
-                            aria-label="Ver estudo de caso do projeto NFSCars"
-                        >
-
-                            <div class="project-image">
-
-                                <img
-                                    src="img/nfscar.jpg"
-                                    alt="Interface do projeto acadêmico NFSCars"
-                                    loading="lazy"
-                                >
-
-                                <span class="project-view">
-                                    Ver projeto ↗
-                                </span>
-
-                            </div>
-
-                            <div class="project-info">
-
-                                <span class="project-number">
-                                    01
-                                </span>
-
-                                <div>
-
-                                    <span class="project-category">
-                                        PROJETO ACADÊMICO · UX/UI
-                                    </span>
-
-                                    <h3>
-                                        NFSCars
-                                    </h3>
-
-                                    <p>
-                                        Projeto desenvolvido durante minha
-                                        formação para estudar organização de
-                                        informações, navegação e construção
-                                        de interfaces para um marketplace
-                                        automotivo.
-                                    </p>
-
-                                    <ul class="tags">
-                                        <li>UX/UI</li>
-                                        <li>Figma</li>
-                                        <li>Bootstrap</li>
-                                        <li>HTML & CSS</li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                        </a>
-
-                    </article>
-
-
-                    <!-- AURA MODAS -->
-
-                    <article class="project">
-
-                        <a
-                            href="aura.html"
-                            aria-label="Ver estudo de caso do projeto Aura Modas"
-                        >
-
-                            <div class="project-image">
-
-                                <img
-                                    src="img/aura.png"
-                                    alt="Interface do projeto acadêmico Aura Modas"
-                                    loading="lazy"
-                                >
-
-                                <span class="project-view">
-                                    Ver projeto ↗
-                                </span>
-
-                            </div>
-
-                            <div class="project-info">
-
-                                <span class="project-number">
-                                    02
-                                </span>
-
-                                <div>
-
-                                    <span class="project-category">
-                                        ESTUDO CONCEITUAL · UI DESIGN
-                                    </span>
-
-                                    <h3>
-                                        Aura Modas
-                                    </h3>
-
-                                    <p>
-                                        Estudo desenvolvido para praticar
-                                        composição visual, tipografia, cores
-                                        e organização de uma página inicial
-                                        de e-commerce.
-                                    </p>
-
-                                    <ul class="tags">
-                                        <li>UX/UI</li>
-                                        <li>Figma</li>
-                                        <li>UI Design</li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SOBRE -->
-
-        <section id="sobre" class="about">
-
-            <div class="container">
-
-                <span class="eyebrow">
-                    02 / SOBRE MIM
-                </span>
-
-                <h2>
-                    Uma estudante
-                    <em>em constante aprendizado.</em>
-                </h2>
-
-                <div class="about-grid">
-
-                    <p class="large-text">
-                        Tenho curiosidade por tecnologia e acredito que cada
-                        projeto é uma oportunidade para aprender algo novo.
-                    </p>
-
-                    <div class="about-text">
-
-                        <p>
-                            Sou estudante de
-                            <strong>Sistemas para Internet na Fatec São Roque</strong>
-                            e técnica em Desenvolvimento de Sistemas pela
-                            <strong>ETEC Itapevi</strong>.
-                        </p>
-
-                        <p>
-                            Durante minha formação, venho estudando diferentes
-                            etapas do desenvolvimento de produtos digitais,
-                            incluindo arquitetura da informação, wireframes,
-                            prototipação, interfaces e desenvolvimento
-                            front-end.
-                        </p>
-
-                        <p>
-                            Ainda não possuo experiência profissional na área
-                            de UX/UI. Minha experiência até o momento é
-                            principalmente acadêmica, construída por meio de
-                            trabalhos, projetos e estudos.
-                        </p>
-
-                        <p>
-                            Meu objetivo é continuar aprendendo, colocar meus
-                            conhecimentos em prática e encontrar uma
-                            oportunidade onde eu possa crescer, contribuir e
-                            aprender com profissionais mais experientes.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skills">
-
-                    <span class="eyebrow">
-                        O QUE ESTOU ESTUDANDO
-                    </span>
-
-                    <div>
-
-                        <span>UX/UI Design</span>
-                        <span>Figma</span>
-                        <span>Arquitetura da Informação</span>
-                        <span>Wireframes</span>
-                        <span>Prototipação</span>
-                        <span>Usabilidade</span>
-                        <span>Acessibilidade</span>
-                        <span>HTML & CSS</span>
-                        <span>Bootstrap</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTATO -->
-
-        <section id="contato" class="contact">
-
-            <div class="container">
-
-                <span class="eyebrow">
-                    03 / CONTATO
-                </span>
-
-                <h2>
-                    Vamos manter
-                    <em>contato?</em>
-                </h2>
-
-                <p>
-                    Estou buscando minha primeira oportunidade na área de
-                    tecnologia, especialmente em UX/UI Design, Product Design
-                    ou desenvolvimento front-end. Tenho muito interesse em
-                    continuar aprendendo e evoluindo através de novos desafios.
-                </p>
-
-                <div class="contact-info">
-
-                    <a href="tel:+5511972402055">
-                        <span aria-hidden="true">☎</span>
-                        +55 (11) 97240-2055
-                    </a>
-
-                    <a href="mailto:abigailporto2016@gmail.com">
-                        <span aria-hidden="true">✉</span>
-                        abigailporto2016@gmail.com
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <div class="container footer-grid">
-
-            <div>
-
-                <a href="index.html" class="logo">
-                    ABIGAIU<span>✦</span>
-                </a>
-
-                <p>
-                    Estudante · UX/UI · Front-end
-                </p>
-
-            </div>
-
-            <div class="footer-links">
-
-                <a
-                    href="https://github.com/SEU-USUARIO"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/abigaiu-porto-aab7561bb/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-            </div>
-
-            <small>
-                © 2026 Abigaiu Porto
-            </small>
-
+        <div class="comp wide-comp"><small>Navegação inferior</small>
+          <nav class="tabbar" aria-label="Exemplo de navegação inferior">
+            <a class="on" href="#design-system">Início</a><a href="#design-system">Treinos</a><a href="#design-system">Evolução</a><a href="#design-system">Aulas</a><a href="#design-system">Perfil</a>
+          </nav>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </footer>
+<!-- 12 -->
+<section class="sec" id="ui">
+  <div class="wrap">
+    <header class="sh"><p class="no">12 / Interface final</p><h2>Uma interface para cada perfil.</h2></header>
+    <div class="ui-block">
+      <div class="ui-head"><h3>ALUNO</h3><p>Uma experiência centrada no acompanhamento dos treinos, evolução, aulas e plano.</p></div>
+      <div class="gallery big" data-gallery="ui-aluno"></div>
+    </div>
+    <div class="ui-block">
+      <div class="ui-head"><h3>PROFESSOR</h3><p>Uma interface voltada ao acompanhamento dos alunos, criação de treinos, avaliações e agenda.</p></div>
+      <div class="gallery big" data-gallery="ui-professor"></div>
+    </div>
+    <div class="ui-block">
+      <div class="ui-head"><h3>GESTÃO</h3><p>Uma estrutura para gerenciamento de alunos, professores, financeiro, turmas e comunicação.</p></div>
+      <div class="gallery big" data-gallery="ui-gestao"></div>
+    </div>
+  </div>
+</section>
 
+<!-- 13 -->
+<section class="sec dark-ink" id="interacoes">
+  <div class="wrap">
+    <header class="sh"><p class="no">13 / Interações</p><h2>Como a interface responde a cada ação.</h2></header>
+    <div class="inter">
+      <div class="i-box"><h3>Estados de treino</h3>
+        <ul class="i-list"><li>Treino A <span class="badge lime">Concluído</span></li><li>Treino B <span class="badge dot">Em andamento</span></li><li>Treino C <span class="badge line">Pendente</span></li></ul></div>
+      <div class="i-box"><h3>Confirmação</h3>
+        <div class="dialog" role="group" aria-label="Exemplo de confirmação"><b>Finalizar treino?</b><span>Os exercícios marcados serão salvos na sua evolução.</span><div class="row"><button class="c-btn primary" type="button" data-fb>Finalizar</button><button class="c-btn ghost" type="button">Voltar</button></div></div></div>
+      <div class="i-box"><h3>Mensagem de erro</h3>
+        <label class="c-field err">Senha<input type="password" value="12345" aria-invalid="true" aria-describedby="e1"></label><p class="err-msg" id="e1">Senha incorreta. Confira os dados ou recupere o acesso.</p></div>
+      <div class="i-box"><h3>Pagamentos</h3>
+        <ul class="i-list"><li>Setembro <span class="badge lime">Pago</span></li><li>Outubro <span class="badge line">Pendente</span></li><li>Agosto <span class="badge alert">Em atraso</span></li></ul></div>
+      <div class="i-box"><h3>Agendamento</h3>
+        <div class="row slots" role="group" aria-label="Horários de exemplo"><button class="slot" type="button" aria-pressed="false">07:00</button><button class="slot" type="button" aria-pressed="true">12:00</button><button class="slot" type="button" aria-pressed="false">18:30</button></div></div>
+      <div class="i-box"><h3>Filtros</h3>
+        <div class="row slots" role="group" aria-label="Filtros de exemplo"><button class="slot" type="button" aria-pressed="true">Todos</button><button class="slot" type="button" aria-pressed="false">Ativos</button><button class="slot" type="button" aria-pressed="false">Inativos</button></div></div>
+      <div class="i-box wide-i"><h3>Feedback visual</h3>
+        <p class="body-s">Toque no botão para ver a confirmação.</p>
+        <button class="c-btn primary fb-btn" type="button" data-fb>Salvar treino</button><p class="toast" role="status" aria-live="polite"></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="sec" id="prototipo">
+  <div class="wrap">
+    <header class="sh"><p class="no">14 / Protótipo navegável</p><h2>Os caminhos principais, prontos para navegar.</h2></header>
+    <div class="proto">
+      <div>
+        <p class="body-l">O protótipo navegável foi desenvolvido no Figma para representar os principais caminhos de interação do aplicativo.</p>
+        <a class="btn btn-lime btn-lg" href="https://www.figma.com/design/KLnjgT60yGeI8IdzOyXWbq/academia?node-id=1-3&t=Z8OjPzL8uDBJyc5q-1" target="_blank" rel="noopener">ABRIR PROTÓTIPO NO FIGMA →</a>
+      </div>
+      <figure class="shot phone" data-file="aluno-home.png"><img src="assets/aluno-home.png" alt="Tela inicial do aluno no protótipo da Academia MOVE-SR" loading="lazy" data-zoom></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 15 -->
+<section class="sec dark-black" id="resultado">
+  <div class="wrap">
+    <header class="sh"><p class="no">15 / Resultado</p><h2>Dados de produção do projeto.</h2></header>
+    <ul class="nums">
+      <li><b>03</b><span>Perfis</span></li><li><b>09</b><span>Personas</span></li><li><b>53</b><span>Telas</span></li><li><b>01</b><span>Design System</span></li>
+      <li><b>01</b><span>Arquitetura</span></li><li><b>03</b><span>Fluxos</span></li><li><b>01</b><span>Protótipo</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 16 -->
+<section class="sec" id="aprendizados">
+  <div class="wrap">
+    <header class="sh"><p class="no">16 / Aprendizados</p><h2>O que este projeto ensinou.</h2></header>
+    <div class="learn">
+      <article><h3>Arquitetura antes da interface</h3><p>Organizar a informação antes de desenhar ajudou a definir uma navegação mais coerente.</p></article>
+      <article><h3>Diferentes perfis</h3><p>O projeto mostrou a importância de adaptar a navegação às necessidades de cada usuário.</p></article>
+      <article><h3>Consistência</h3><p>O Design System ajudou a manter padrões visuais e de interação.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 17 -->
+<section class="sec dark-ink" id="proximos">
+  <div class="wrap">
+    <header class="sh"><p class="no">17 / Próximos passos</p><h2>Possibilidades futuras.</h2></header>
+    <p class="body-l narrow">Ainda não realizados. São caminhos possíveis para evoluir o projeto além da prototipação.</p>
+    <ul class="next">
+      <li>Pesquisa com usuários reais</li><li>Testes de usabilidade</li><li>Implementação funcional</li><li>Banco de dados</li>
+      <li>Autenticação</li><li>Pagamentos</li><li>Notificações</li><li>Métricas</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta dark-black" id="contato">
+  <div class="wrap">
+    <h2>ACADEMIA<br>MOVE-SR</h2>
+    <p class="lead">Um projeto de UX/UI focado em organizar experiências, informações e interações.</p>
+    <div class="cta-btns">
+      <a class="btn btn-lime btn-lg" href="https://www.figma.com/design/KLnjgT60yGeI8IdzOyXWbq/academia?node-id=1-3&t=Z8OjPzL8uDBJyc5q-1" target="_blank" rel="noopener">VER PROTÓTIPO NO FIGMA →</a>
+      <a class="btn btn-outline btn-lg" href="https://www.linkedin.com/in/abigaiu-porto-aab7561bb" target="_blank" rel="noopener">LINKEDIN →</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div><p class="f-name">ABIGAIU PORTO DO PRADO</p><p>UX/UI DESIGN · PRODUCT DESIGN</p><p class="f-sub">Figma · UX/UI · IA · Prototipação</p></div>
+    <nav aria-label="Links externos"><a href="https://www.linkedin.com/in/abigaiu-porto-aab7561bb" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/AbigaiuPorto/portfolio-UX.UI.git" target="_blank" rel="noopener">GitHub</a><a href="https://www.figma.com/design/KLnjgT60yGeI8IdzOyXWbq/academia?node-id=1-3&t=Z8OjPzL8uDBJyc5q-1" target="_blank" rel="noopener">Figma</a></nav>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Voltar ao topo" hidden>↑</button>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Fechar imagem">Fechar ×</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
